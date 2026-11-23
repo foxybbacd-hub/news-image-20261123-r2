@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Page — Monday 23 November 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    font-family: "Noto Sans", "DejaVu Sans", Arial, sans-serif;
+    background: #ffffff;
+    color: #141414;
+  }
+  .page {
+    width: 1024px; height: 1024px;
+    padding: 24px 28px 18px;
+    background: #fbf7ee;
+    overflow: hidden;
+  }
+  .serif { font-family: "DejaVu Serif", Georgia, serif; }
+
+  /* ---------- masthead ---------- */
+  .nameplate {
+    text-align: center;
+    font-family: "DejaVu Serif", Georgia, serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: 1px;
+  }
+  .nameplate .red { color: #b3202c; }
+  .dateline {
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 3px solid #141414;
+    border-bottom: 1px solid #141414;
+    padding: 7px 2px;
+    margin-top: 9px;
+  }
+  .dateline .date { font-size: 19px; font-weight: 700; letter-spacing: 1px; }
+  .dateline .places { font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #444; }
+
+  .kicker {
+    color: #b3202c; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .rule { border: none; border-top: 2px solid #141414; }
+
+  /* ---------- lead story: COP31 ---------- */
+  .lead {
+    display: flex;
+    margin-top: 12px;
+    border: 2px solid #141414;
+    background: #ffffff;
+    height: 248px;
+  }
+  .lead-text { flex: 1; padding: 16px 20px 12px; }
+  .lead-text .kicker { font-size: 13px; }
+  .lead-text h1 {
+    font-family: "DejaVu Serif", Georgia, serif;
+    font-weight: 700; font-size: 42px; line-height: 1.04;
+    margin-top: 6px;
+  }
+  .lead-text .deck { font-size: 17px; line-height: 1.35; margin-top: 9px; }
+  .lead-text .foot { font-size: 13px; color: #555; margin-top: 10px; }
+  .lead-art { width: 330px; flex: none; border-left: 2px solid #141414; }
+  .lead-art svg { display: block; width: 330px; height: 236px; }
+
+  /* ---------- rows of panels ---------- */
+  .row { display: flex; gap: 14px; margin-top: 12px; }
+  .panel {
+    flex: 1; border: 2px solid #141414; background: #ffffff;
+    display: flex; flex-direction: column;
+  }
+  .panel .art { flex: none; }
+  .panel .art svg { display: block; width: 100%; }
+  .panel .body { padding: 9px 13px 10px; }
+  .panel .body .kicker { font-size: 11px; }
+  .panel .body h2 {
+    font-family: "DejaVu Serif", Georgia, serif;
+    font-weight: 700; line-height: 1.06; margin-top: 4px;
+  }
+  .panel .body .deck { line-height: 1.32; margin-top: 5px; color: #222; }
+  .row2 { height: 224px; }
+  .row2 .art svg { height: 100px; }
+  .row2 .body h2 { font-size: 26px; }
+  .row2 .body .deck { font-size: 15px; }
+  .row3 { height: 210px; }
+  .row3 .art svg { height: 84px; }
+  .row3 .body h2 { font-size: 20px; }
+  .row3 .body .deck { font-size: 13px; }
+
+  /* ---------- also today ---------- */
+  .also { margin-top: 12px; border: 2px solid #141414; background: #ffffff; }
+  .also-head {
+    background: #141414; color: #fbf7ee;
+    font-size: 15px; font-weight: 700; letter-spacing: 3px;
+    padding: 6px 12px;
+  }
+  .also-items { display: flex; }
+  .also-item {
+    flex: 1; display: flex; gap: 10px; align-items: flex-start;
+    padding: 8px 12px;
+  }
+  .also-item + .also-item { border-left: 1px solid #999; }
+  .also-item .icon { flex: none; width: 44px; height: 44px; }
+  .also-item .icon svg { display: block; width: 44px; height: 44px; }
+  .also-item h3 { font-size: 14.5px; line-height: 1.2; }
+  .also-item p { font-size: 12.5px; line-height: 1.3; color: #333; margin-top: 3px; }
+
+  .footer {
+    margin-top: 7px; text-align: center;
+    font-size: 11.5px; color: #555; line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="nameplate">THE WORLD <span class="red">IN ONE PAGE</span></div>
+  <div class="dateline">
+    <span class="date">MONDAY 23 NOVEMBER 2026</span>
+    <span class="places">ANTALYA &bull; WASHINGTON &bull; BENGHAZI &bull; NEW DELHI &bull; SEOUL &bull; BANTEN</span>
+  </div>
+
+  <!-- LEAD: COP31 -->
+  <div class="lead">
+    <div class="lead-text">
+      <div class="kicker">Climate &bull; Antalya, T&uuml;rkiye</div>
+      <h1>COP31 COLLAPSES WITHOUT A DEAL</h1>
+      <div class="deck">The UN climate summit ends in failure, the first full
+      collapse since Copenhagen in 2009, after the EU rejects a draft
+      that never names fossil fuels.</div>
+      <div class="foot">Talks ran 40 hours past their close; COP32 meets in Addis
+      Ababa in 2027.</div>
+    </div>
+    <div class="lead-art">
+      <svg viewBox="0 0 330 236" xmlns="http://www.w3.org/2000/svg">
+        <rect width="330" height="236" fill="#cfe3ee"/>
+        <circle cx="282" cy="40" r="24" fill="#e8a13a"/>
+        <g stroke="#e8a13a" stroke-width="4" stroke-linecap="round">
+          <line x1="282" y1="8" x2="282" y2="0"/>
+          <line x1="314" y1="40" x2="322" y2="40"/>
+          <line x1="305" y1="17" x2="311" y2="11"/>
+          <line x1="259" y1="17" x2="253" y2="11"/>
+        </g>
+        <circle cx="150" cy="122" r="76" fill="#2f6fb2"/>
+        <g fill="#4c9a4c">
+          <ellipse cx="122" cy="96" rx="26" ry="16"/>
+          <ellipse cx="172" cy="82" rx="18" ry="11"/>
+          <ellipse cx="182" cy="140" rx="24" ry="14"/>
+          <ellipse cx="118" cy="152" rx="16" ry="10"/>
+        </g>
+        <path d="M108 62 L138 104 L124 142 L164 186" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M138 104 L162 118" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#8a8f96" opacity="0.85">
+          <ellipse cx="238" cy="66" rx="16" ry="9"/>
+          <ellipse cx="252" cy="48" rx="12" ry="7"/>
+          <ellipse cx="262" cy="32" rx="8" ry="5"/>
+        </g>
+        <g fill="#3a5f46">
+          <polygon points="0,236 0,206 40,186 80,206 120,190 160,206 200,192 240,206 280,194 330,206 330,236"/>
+        </g>
+        <g transform="rotate(-12 252 168)">
+          <rect x="206" y="150" width="96" height="36" fill="#fbf7ee" stroke="#b3202c" stroke-width="3"/>
+          <text x="254" y="175" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#b3202c">NO DEAL</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ROW 2: Democrats + Merkury -->
+  <div class="row row2">
+    <div class="panel">
+      <div class="art">
+        <svg viewBox="0 0 478 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="478" height="100" fill="#1f2a5c"/>
+          <g fill="#ffffff">
+            <polygon points="28,18 32,26 40,26 34,31 36,39 28,34 20,39 22,31 16,26 24,26"/>
+            <polygon points="196,12 199,19 206,19 201,23 203,30 196,26 189,30 191,23 186,19 193,19"/>
+            <polygon points="250,58 252,63 257,63 253,66 255,71 250,68 245,71 247,66 243,63 248,63"/>
+          </g>
+          <g fill="#fbf7ee">
+            <rect x="52" y="78" width="132" height="10"/>
+            <rect x="60" y="66" width="116" height="12"/>
+            <path d="M66 66 L66 52 Q118 8 170 52 L170 66 Z"/>
+            <rect x="114" y="4" width="4" height="16"/>
+            <polygon points="118,4 132,9 118,14"/>
+            <g>
+              <rect x="72" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="88" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="104" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="120" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="136" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="152" y="80" width="6" height="8" fill="#1f2a5c"/>
+              <rect x="168" y="80" width="6" height="8" fill="#1f2a5c"/>
+            </g>
+          </g>
+          <text x="330" y="72" font-family="DejaVu Serif, Georgia, serif" font-size="62" font-weight="bold" fill="#ffffff">258</text>
+          <text x="332" y="94" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" letter-spacing="4" fill="#f2c14e">SEATS</text>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="kicker">USA &bull; Washington</div>
+        <h2>Democrats Clinch 258 Seats</h2>
+        <div class="deck">At least 258 seats, the largest House majority since
+        1992. Chuck Hubbard beats Virginia Foxx in North Carolina; four races
+        still uncalled.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="art">
+        <svg viewBox="0 0 478 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="478" height="100" fill="#274b63"/>
+          <rect width="478" height="34" fill="#cfd8dc"/>
+          <g fill="#8a8f96" opacity="0.9">
+            <ellipse cx="330" cy="26" rx="22" ry="10"/>
+            <ellipse cx="352" cy="16" rx="15" ry="7"/>
+            <ellipse cx="368" cy="8" rx="9" ry="4"/>
+          </g>
+          <g transform="rotate(-7 240 66)">
+            <path d="M318 52 L330 38 L342 52 Z" fill="#f2a33c"/>
+            <path d="M326 50 L336 34 L348 50 Z" fill="#e86a1f"/>
+            <rect x="120" y="58" width="220" height="16" fill="#10181d"/>
+            <polygon points="120,58 340,58 322,74 138,74"/>
+            <rect x="180" y="40" width="90" height="18" fill="#10181d"/>
+            <rect x="286" y="30" width="10" height="28" fill="#10181d"/>
+            <rect x="150" y="30" width="8" height="28" fill="#10181d"/>
+          </g>
+          <g fill="none" stroke="#e8eef0" stroke-width="3" stroke-linecap="round">
+            <path d="M20 88 Q60 80 100 88 T180 88 T260 88 T340 88 T420 88 T470 88"/>
+            <path d="M40 96 Q80 90 120 96 T200 96 T280 96 T360 96 T440 96"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="kicker">Libya &bull; Benghazi</div>
+        <h2>Warship Capsized Off Libya</h2>
+        <div class="deck">Suspected Ukrainian sea drones hit the Russian corvette
+        <i>Merkury</i> at Benghazi, the second Russian ship struck in a
+        single weekend.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 3: Nepal + Korea + Indonesia -->
+  <div class="row row3">
+    <div class="panel">
+      <div class="art">
+        <svg viewBox="0 0 312 84" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="312" height="84" fill="#dfe9f2"/>
+          <polygon points="0,84 52,26 104,84" fill="#7d94a8"/>
+          <polygon points="52,26 66,40 52,46 38,40" fill="#ffffff"/>
+          <polygon points="70,84 140,8 210,84" fill="#5b7286"/>
+          <polygon points="140,8 158,28 140,36 122,28" fill="#ffffff"/>
+          <polygon points="180,84 240,34 300,84" fill="#7d94a8"/>
+          <polygon points="240,34 252,46 240,52 228,46" fill="#ffffff"/>
+          <g>
+            <rect x="252" y="44" width="3" height="40" fill="#141414"/>
+            <polygon points="255,46 279,54 255,64" fill="#dc143c"/>
+            <polygon points="255,64 273,70 255,78" fill="#dc143c"/>
+          </g>
+          <g>
+            <rect x="24" y="44" width="3" height="40" fill="#141414"/>
+            <rect x="27" y="46" width="26" height="8" fill="#ff9933"/>
+            <rect x="27" y="54" width="26" height="8" fill="#ffffff"/>
+            <rect x="27" y="62" width="26" height="8" fill="#138808"/>
+            <circle cx="40" cy="58" r="4" fill="none" stroke="#000080" stroke-width="1.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="kicker">India &bull; New Delhi</div>
+        <h2>Nepal PM Meets Modi</h2>
+        <div class="deck">Balendra Shah&rsquo;s first trip abroad as PM; Delhi talks on
+        energy, trade and roads.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="art">
+        <svg viewBox="0 0 312 84" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="312" height="84" fill="#f4f1e8"/>
+          <g transform="rotate(-5 90 42)">
+            <rect x="46" y="14" width="88" height="58" fill="#ffffff" stroke="#999" stroke-width="2"/>
+            <line x1="58" y1="28" x2="122" y2="28" stroke="#bbb" stroke-width="3"/>
+            <line x1="58" y1="40" x2="122" y2="40" stroke="#bbb" stroke-width="3"/>
+            <line x1="58" y1="52" x2="100" y2="52" stroke="#bbb" stroke-width="3"/>
+          </g>
+          <g stroke="#b3202c" stroke-width="6" stroke-linecap="round">
+            <line x1="66" y1="26" x2="118" y2="62"/>
+            <line x1="118" y1="26" x2="66" y2="62"/>
+          </g>
+          <g>
+            <rect x="196" y="18" width="62" height="48" rx="10" fill="#3a3f4a"/>
+            <line x1="227" y1="18" x2="227" y2="6" stroke="#3a3f4a" stroke-width="4"/>
+            <circle cx="227" cy="5" r="4" fill="#e8a13a"/>
+            <circle cx="214" cy="38" r="7" fill="#7fe3e0"/>
+            <circle cx="240" cy="38" r="7" fill="#7fe3e0"/>
+            <line x1="214" y1="54" x2="240" y2="54" stroke="#7fe3e0" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <text x="272" y="48" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="bold" fill="#b3202c">AI</text>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="kicker">South Korea &bull; Seoul</div>
+        <h2>Minister Quits Over AI Cheating</h2>
+        <div class="deck">Education chief Choi Kyo-jin resigns over the CSAT
+        anti-cheating chaos.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="art">
+        <svg viewBox="0 0 312 84" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="312" height="84" fill="#f6e3d3"/>
+          <g fill="#8a8f96" opacity="0.85">
+            <ellipse cx="236" cy="18" rx="16" ry="8"/>
+            <ellipse cx="250" cy="8" rx="11" ry="5"/>
+          </g>
+          <g>
+            <path d="M96 44 Q104 26 112 40 Q118 22 128 38 Q134 26 142 42 L142 52 L96 52 Z" fill="#f2a33c"/>
+            <path d="M106 46 Q112 34 120 44 Q126 34 134 46 L134 52 L106 52 Z" fill="#e86a1f"/>
+          </g>
+          <g fill="#3a3230">
+            <rect x="30" y="52" width="180" height="32"/>
+            <polygon points="30,52 52,36 74,52"/>
+            <polygon points="74,52 96,36 118,52"/>
+            <polygon points="118,52 140,36 162,52"/>
+            <rect x="216" y="22" width="16" height="62"/>
+            <rect x="60" y="62" width="16" height="12" fill="#f6e3d3"/>
+            <rect x="96" y="62" width="16" height="12" fill="#f6e3d3"/>
+            <rect x="132" y="62" width="16" height="12" fill="#f6e3d3"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="kicker">Indonesia &bull; Java</div>
+        <h2>Factory Fire: 3 Dead, Dozens Missing</h2>
+        <div class="deck">Blaze rips through a candy factory in Banten; rescuers
+        search the ruins.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALSO TODAY -->
+  <div class="also">
+    <div class="also-head">ALSO TODAY</div>
+    <div class="also-items">
+      <div class="also-item">
+        <div class="icon">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="36" height="36" fill="#e8f0e4"/>
+            <g transform="rotate(35 20 22)">
+              <rect x="16" y="8" width="9" height="20" rx="3" fill="#b5793a"/>
+              <rect x="18" y="28" width="5" height="10" fill="#8a5a28"/>
+            </g>
+            <circle cx="32" cy="30" r="6" fill="#b3202c"/>
+          </svg>
+        </div>
+        <div>
+          <h3>India Six Wickets From Test Win</h3>
+          <p>After a record 720/9 in Wellington, New Zealand fight to save the
+          first Test.</p>
+        </div>
+      </div>
+      <div class="also-item">
+        <div class="icon">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="36" height="36" fill="#e8e4da"/>
+            <rect x="12" y="12" width="20" height="24" fill="#8a8f96"/>
+            <polygon points="12,12 22,6 32,12" fill="#6a6f76"/>
+            <g fill="#fbf7ee">
+              <rect x="16" y="16" width="4" height="4"/>
+              <rect x="24" y="16" width="4" height="4"/>
+              <rect x="16" y="24" width="4" height="4"/>
+              <rect x="24" y="24" width="4" height="4"/>
+            </g>
+            <path d="M22 6 L30 12 L26 14 L30 20" fill="none" stroke="#b3202c" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>14 Missing After Drone Hits Flats Near Kyiv</h3>
+          <p>A Russian drone partly collapses a five-storey block in Dymer.</p>
+        </div>
+      </div>
+      <div class="also-item">
+        <div class="icon">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="36" height="36" fill="#e4e8f0"/>
+            <polygon points="22,10 38,34 6,34" fill="#2f5a8a"/>
+            <rect x="10" y="34" width="24" height="3" fill="#2f5a8a"/>
+            <rect x="14" y="24" width="3" height="10" fill="#fbf7ee"/>
+            <rect x="20" y="24" width="3" height="10" fill="#fbf7ee"/>
+            <rect x="27" y="24" width="3" height="10" fill="#fbf7ee"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Myanmar Slams ASEAN Over Summit Exclusion</h3>
+          <p>Army-backed government calls the bloc&rsquo;s decision
+          &ldquo;unfair and imbalanced&rdquo;.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Sources: Associated Press &bull; Reuters &bull; Agence France-Presse &bull;
+  The Wall Street Journal &bull; IANS. All stories checked against coverage dated
+  23 November 2026. Full source list in SOURCES.md.</div>
+
+</div>
+</body>
+</html>
